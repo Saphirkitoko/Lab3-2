@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS link -->
+    <link href="feedback-style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1>Please provide feedback. You may do so anonymously.</h1>
+
+    <form>
+        <!-- Name and Email fields -->
+        <div class="row">
+            <div class="col-md-6">
+                <label for="name">Name</label> <input id="name" class="form-control"><br>
+            </div>
+            <div class="col-md-6">
+                <label for="email">Email</label> <input id="email" type="email" class="form-control"><br>
+            </div>
+        </div>
+
+        <!-- Comments field -->
+        <div class="form-group">
+            <label for="comments">Comments</label> <br>
+            <textarea id="comments" required class="form-control"></textarea><br>
+        </div>
+
+        <!-- Current student radio buttons -->
+        <div class="form-group">
+            <label>Are you a current student?</label><br>
+            <div class="form-check form-check-inline">
+                <input name="current-student" id="yes" type="radio" checked class="form-check-input">
+                <label for="yes" class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input name="current-student" id="no" type="radio" class="form-check-input">
+                <label for="no" class="form-check-label">No</label>
+            </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

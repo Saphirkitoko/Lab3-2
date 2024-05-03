@@ -1,0 +1,8 @@
+body {
+    background: #324386;  /* Background color */
+    font-family: 'Roboto Slab', serif; /* Font family for body text */
+}
+
+.header {
+    font-family: 'Pacifico', cursive; /* Font family for header */
+}
